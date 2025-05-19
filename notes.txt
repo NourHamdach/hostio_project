@@ -1,0 +1,8 @@
+1. Insert all the required data using the following command: npx sequelize-cli db:seed:all
+
+2. cloudinary for uploading images logo,pdf,image post done
+key -> facts
+imageDescription or Video URL
+table saved job :jobseekerId ,jobId
+
+
