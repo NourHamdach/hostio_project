@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  hostio_postgres:
+    image: postgres:16
+    container_name: hostio_postgres
+    environment:
+      POSTGRES_USER: 
+      POSTGRES_PASSWORD: 
+      POSTGRES_DB: 
+    ports:
+      - ""
+    volumes:
+      - hostio_postgres_data:/var/lib/postgresql/data
+    command: ["postgres", "-c", "listen_addresses=*"]
+    restart: always
+
+  hostio_backend:
+    build: .
+    container_name: hostio_backend
+    ports:
+      - "3004:3001"
+    depends_on:
+      - hostio_postgres
+    environment:
+      DATABASE_URL: 
+      NODE_ENV: development
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: sh -c "npm install && npm start"
+    restart: always
+
+volumes:
+  hostio_postgres_data:
+

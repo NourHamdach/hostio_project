@@ -1,0 +1,16 @@
+to modify: 
+- email of the company shouldn't be @gmail
+
+1. education 
+
+2.post => images storage , get jobs (no images,no location),location based on what the google api return
+
+3. usually job seekers cannot edit their job application, could the company edit it?
+
+4. cloudinary resume for job applications cvs and other docs
+
+5. status?? avialbility inside the job application where do i use them?
+6.get all company that can be verified after make sure that its demo is done 
+7. by  migration sequelize :drop country id ,rename image url by background url,add logo url
+
+8.validations for languages we can not put mandatory language and optional the same

@@ -1,0 +1,18 @@
+# Node modules (ignore everywhere)
+**/node_modules/
+
+# Environment files (ignore in all apps)
+**/.env
+**/.env.*.local
+**/package-lock.json
+
+# Configuration files with secrets
+config/google-calendar.json
+config/config.json
+
+# Backups and temporary files
+*.backup
+*.bak
+*.tmp
+*_backup_*
+*_clean_tmp_*

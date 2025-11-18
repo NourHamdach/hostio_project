@@ -1,0 +1,36 @@
+step1: npm i
+
+# To create a database
+npx sequelize-cli db:create
+
+
+#Run the following command to apply migrations
+npx sequelize-cli db:migrate
+
+# Used to create migrations
+npx sequelize-cli migration:generate --name create-users
+
+#to drop all the tables
+npx sequelize db:drop
+
+# to run the app: 
+node server.js
+#Whenever you change any .js file, the server will automatically restart.
+npm run dev
+
+# to create a new file in seeders
+npx sequelize-cli seed:generate --name demo-user
+
+# to insert all the required data from seeders
+
+
+
+#stripe
+stripe login
+stripe listen --forward-to localhost:3001/api/webhooks/stripe
+
+INSERT INTO "{sequelize}Meta" ("name") VALUES ('name of file');
+npx {sequelize}-cli db:migrate:status
+ngrok http 3001
+
+
